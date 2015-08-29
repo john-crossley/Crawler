@@ -1,0 +1,19 @@
+{
+    "name": "john-crossley/bot",
+    "description": "A crawler for Veggie Beers",
+    "authors": [
+        {
+            "name": "John Crossley",
+            "email": "jonnysnip3r@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bot\\": "src/Bot"
+        }
+    }
+}
