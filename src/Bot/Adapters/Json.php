@@ -3,7 +3,9 @@
 class Json implements Adaptable
 {
     /**
-     * @param $response
+     * @param $data
+     * @return mixed
+     * @internal param $response
      */
     public function parse($data)
     {

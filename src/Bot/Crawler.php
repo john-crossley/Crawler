@@ -21,9 +21,10 @@ class Crawler
      */
     private $httpClient;
 
-    private $response;
-
-    private $data;
+    /**
+     * @var mixed
+     */
+    private $parsedData;
 
     public function setUrl(\string $url)
     {
@@ -53,13 +54,13 @@ class Crawler
         $this->getHttpClient()->get($this->url);
 
         if ($this->adapter) {
-            $this->data = $this->adapter->parse($this->getBody());
+            $this->parsedData = $this->adapter->parse($this->getBody());
         }
     }
 
-    public function getData()
+    public function getParsedData()
     {
-        return $this->data;
+        return $this->parsedData;
     }
 
     public function getResponse()

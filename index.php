@@ -10,4 +10,4 @@ $bot->crawl();
 //echo $bot->getHttpClient()->getStatusCode();
 
 
-print_r($bot->getData());
+print_r($bot->getParsedData());
